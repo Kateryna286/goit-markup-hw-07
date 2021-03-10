@@ -429,7 +429,7 @@ body {
   padding-bottom: 94px;
 }
 
-.team-title {
+.team__title {
   margin-bottom: 50px;
 
   color: var(--title-text-color);
@@ -437,41 +437,14 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-
-  text-align: center;
-}
-
-.team-card {
-  padding: 30px 32px;
-}
-
-.team-item-title {
-  margin-bottom: 10px;
-
-  color: var(--title-text-color);
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-
-  text-align: center;
-}
-
-.team-item-text {
-  margin-bottom: 16px;
-
-  color: var(--text-color);
-
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.18;
+  letter-spacing: 0.03em;
 
   text-align: center;
 }
 
 /* Размещает блоки в строку. Компенсационные отступы */
 
-.team-list {
+.team-card {
   display: flex;
   flex-wrap: wrap;
 
@@ -481,30 +454,60 @@ body {
 
 /* Размещает блоки по 3 в строке. Добавляет отступы между ними */
 
-.team-list > .team-list-item {
+.team-card__item {
   flex-basis: calc(100% / 4 - 30px);
 
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.team-list-item {
+.team-card__item {
   background-color: var(--main-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
+.team-card__thumb {
+  padding: 30px 32px;
+}
+
+.team-card__title {
+  margin-bottom: 10px;
+
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+}
+
+.team-card__text {
+  margin-bottom: 16px;
+
+  color: var(--text-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+}
+
 /* Блок с иконками соц.сетей */
 
-.social-network {
+.social-networks {
   display: flex;
   justify-content: space-between;
 }
 
 /* Размещение ссылок в строку, выравнивание */
 
-.circle-button {
+.social-networks__circle-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -520,13 +523,13 @@ body {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.circle-button:hover,
-.circle-button:focus {
+.social-networks__circle-button:hover,
+.social-networks__circle-button:focus {
   background-color: var(--accent-color);
   color: var(--white-additional-color);
 }
 
-.icon-sn {
+.social-networks__icon {
   fill: currentColor;
 }
 
