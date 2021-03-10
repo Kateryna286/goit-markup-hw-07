@@ -89,6 +89,42 @@ button {
 
 /* Header */
 
+/* Геометрия и позиционирование Header */
+
+/* Размещает в одну строку навигацию и контакты */
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Размещает в одну строку лого и нав. ссылки */
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+/*Размещает в одну строку ссылки на страницы сайта, 
+Размещает в одну строку ссылки email и tel */
+
+.site-menu,
+.header__contacts {
+  display: flex;
+}
+
+/* Добавляет отступы между нав. ссылками и между ссылками контактов. 
+Отступ только для тех элементов, перед которыми есть хоть один сосед */
+
+.site-menu .site-menu__item + .site-menu__item {
+  margin-left: 50px;
+}
+
+.header__contacts .header__contacts__item + .header__contacts__item {
+  margin-left: 50px;
+}
+
 /* Логотип в шапке */
 
 .logo {
@@ -105,13 +141,13 @@ button {
   line-height: 1.19;
 }
 
-.logo-web {
+.logo__accent-text {
   color: var(--accent-color);
 }
 
 /* Оформление нав. ссылок в шапке */
 
-.header-list-link {
+.site-menu__link {
   position: relative;
 
   padding-top: 32px;
@@ -128,18 +164,18 @@ button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-list-link:hover,
-.header-list-link:focus {
+.site-menu__link:hover,
+.site-menu__link:focus {
   color: var(--accent-color);
 }
 
-.header-list .header-list-link.current {
+.site-menu__link--current {
   color: var(--accent-color);
 }
 
 /* Подчеркивание активного пункта меню */
 
-.header-list-link.current::after {
+.site-menu__link--current::after {
   position: absolute;
   content: '';
   display: block;
@@ -152,7 +188,7 @@ button {
 
 /* Оформление ссылок email и tel в шапке */
 
-.contacts-link {
+.header__contacts__link {
   display: flex;
   align-items: center;
 
@@ -170,49 +206,14 @@ button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-link:hover,
-.contacts-link:focus {
+.header__contacts__link:hover,
+.header__contacts__link:focus {
   color: var(--accent-color);
-}
-
-/* Геометрия и позиционирование Header */
-
-/* Размещает в одну строку ссылки email и tel */
-
-.header-list,
-.contacts {
-  display: flex;
-}
-
-/* Размещает в одну строку лого и нав. ссылки */
-
-.header-nav {
-  display: flex;
-  align-items: center;
-}
-
-/* Размещает в одну строку навигацию и контакты */
-
-.main-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Добавляет отступы между нав. ссылками и между ссылками контактов. 
-Отступ только для тех элементов, перед которыми есть хоть один сосед */
-
-.header-list .item + .item {
-  margin-left: 50px;
-}
-
-.contacts .item + .item {
-  margin-left: 50px;
 }
 
 /* Цвет и отступ для иконок мейла и телефона */
 
-.icon-contacts {
+.header__contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }

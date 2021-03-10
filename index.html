@@ -20,45 +20,46 @@
     <!-- Шапка -->
     <header class="header">
       <!--Контейнер для шапки сайта-->
-      <div class="container main-nav">
-        <nav class="header-nav">
-          <!--Навигация-->
+      <div class="container header__container">
+        <!--Навигация-->
+        <nav class="header__nav">
           <a href="./index.html" class="logo">
-            <span class="logo-web">Web</span>Studio
+            <span class="logo__accent-text">Web</span>Studio
           </a>
 
-          <ul class="header-list">
-            <li class="item">
-              <a href="" class="header-list-link current">Студия</a>
+          <ul class="site-menu">
+            <li class="site-menu__item">
+              <a
+                href="./index.html"
+                class="site-menu__link site-menu__link--current"
+                >Студия</a
+              >
             </li>
 
-            <li class="item">
-              <a href="./portfolio.html" class="header-list-link">Портфолио</a>
+            <li class="site-menu__item">
+              <a href="./portfolio.html" class="site-menu__link">Портфолио</a>
             </li>
 
-            <li class="item">
-              <a href="" class="header-list-link">Контакты</a>
+            <li class="site-menu__item">
+              <a href="" class="site-menu__link">Контакты</a>
             </li>
           </ul>
         </nav>
 
         <!--Kонтакы-->
-        <ul class="contacts">
-          <li class="item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="contacts-link header-mail"
-            >
-              <svg class="icon-contacts" width="16" height="12">
+        <ul class="header__contacts">
+          <li class="header__contacts__item">
+            <a href="mailto:info@devstudio.com" class="header__contacts__link">
+              <svg class="header__contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
 
-          <li class="item">
-            <a href="tel:+380961111111" class="contacts-link header-tel">
-              <svg class="icon-contacts" width="10" height="16">
+          <li class="header__contacts__item">
+            <a href="tel:+380961111111" class="header__contacts__link">
+              <svg class="header__contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -73,7 +74,6 @@
       <section class="hero">
         <div class="header-overlay">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <!-- <a href="" class="hero-link" data-modal-open>Заказать услугу</a> -->
           <button class="hero-button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
@@ -429,7 +429,7 @@
           <div class="footer-contacts">
             <!-- Лого -->
             <a href="./index.html" class="footer-logo">
-              <span class="logo-web">Web</span>Studio
+              <span class="logo__accent-text">Web</span>Studio
             </a>
 
             <!--Контактная информация-->
