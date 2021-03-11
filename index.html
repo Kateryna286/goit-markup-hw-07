@@ -423,108 +423,104 @@
 
     <!-- Подвал -->
     <footer class="footer">
-      <div class="container">
-        <div class="footer-flex">
-          <!-- Блок с контактной информацией -->
-          <div class="footer-contacts">
-            <!-- Лого -->
-            <a href="./index.html" class="footer-logo">
-              <span class="logo__accent-text">Web</span>Studio
-            </a>
+      <div class="container footer__container">
+        <!-- Блок с контактной информацией и лого. Создан для позиционирования элементов -->
+        <div class="footer__contacts">
+          <!-- Лого -->
+          <a href="./index.html" class="footer__logo">
+            <span class="logo__accent-text">Web</span>Studio
+          </a>
 
-            <!--Контактная информация-->
-            <address class="footer-address">
-              <!-- Физический адрес -->
+          <!--Контактная информация-->
+          <address class="address">
+            <!-- Физический адрес -->
 
+            <a href="https://goo.gl/maps/JUrXiFq32XLz6EwXA" class="address__map"
+              >г. Киев, пр-т Леси Украинки, 26</a
+            >
+
+            <!-- Электронная почта -->
+
+            <a href="mailto:info@devstudio.com" class="address__email"
+              >info@devstudio.com</a
+            >
+
+            <!-- Телефон -->
+
+            <a href="tel:+380961111111" class="address__tel"
+              >+38 096 111 11 11</a
+            >
+          </address>
+        </div>
+
+        <!-- Блок со ссылками на соц.сети -->
+        <div class="footer-sn">
+          <p class="footer__titles">присоединяйтесь</p>
+          <ul class="footer-sn__set">
+            <li class="footer-sn__items">
               <a
-                href="https://goo.gl/maps/JUrXiFq32XLz6EwXA"
-                class="footer-address-link"
-                >г. Киев, пр-т Леси Украинки, 26</a
+                href=""
+                class="social-networks__circle-button footer-sn__circle-button"
               >
-
-              <!-- Электронная почта -->
-
-              <a href="mailto:info@devstudio.com" class="footer-email"
-                >info@devstudio.com</a
+                <svg class="social-networks__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-sn__items">
+              <a
+                href=""
+                class="social-networks__circle-button footer-sn__circle-button"
               >
-
-              <!-- Телефон -->
-
-              <a href="tel:+380961111111" class="footer-tel"
-                >+38 096 111 11 11</a
+                <svg class="social-networks__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-sn__items">
+              <a
+                href=""
+                class="social-networks__circle-button footer-sn__circle-button"
               >
-            </address>
-          </div>
+                <svg class="social-networks__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-sn__items">
+              <a
+                href=""
+                class="social-networks__circle-button footer-sn__circle-button"
+              >
+                <svg class="social-networks__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-          <!-- Блок со ссылками на соц.сети -->
-          <div class="footer-sn">
-            <p class="footer-titles">присоединяйтесь</p>
-            <ul class="footer-circle-icons">
-              <li class="footer-sn-items">
-                <a
-                  href=""
-                  class="social-networks__circle-button footer-circle-button"
-                >
-                  <svg class="social-networks__icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-sn-items">
-                <a
-                  href=""
-                  class="social-networks__circle-button footer-circle-button"
-                >
-                  <svg class="social-networks__icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-sn-items">
-                <a
-                  href=""
-                  class="social-networks__circle-button footer-circle-button"
-                >
-                  <svg class="social-networks__icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-sn-items">
-                <a
-                  href=""
-                  class="social-networks__circle-button footer-circle-button"
-                >
-                  <svg class="social-networks__icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Блок с подпиской на рассылку -->
-          <div class="footer-subscribe">
-            <form>
-              <p class="footer-titles">Подпишитесь на рассылку</p>
-              <div role="group" class="footer-sub-main">
-                <label>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="E-mail"
-                    class="footer-sub-field"
-                  />
-                </label>
-                <button type="submit" class="footer-sub-btn">
-                  Подписаться
-                  <svg class="clients-icon-logo" width="24" height="24">
-                    <use href="./images/icons.svg#icon-send-footer"></use>
-                  </svg>
-                </button>
-              </div>
-            </form>
-          </div>
+        <!-- Блок с подпиской на рассылку -->
+        <div class="footer-subscribe">
+          <form>
+            <p class="footer__titles">Подпишитесь на рассылку</p>
+            <div role="group" class="footer-subscribe__set">
+              <label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  class="footer-subscribe__input"
+                />
+              </label>
+              <button type="submit" class="button footer-subscribe__button">
+                Подписаться
+                <svg class="button__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send-footer"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
