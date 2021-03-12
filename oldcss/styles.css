@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --main-background-color: #ffffff;
   --white-additional-color: #ffffff;
   --additional-background-color: #f5f4fa;
@@ -10,12 +10,12 @@
   --mailtel-logo-footer: rgba(255, 255, 255, 0.6);
   --grey-svg-color: #afb1b8;
   --portfolio-border-color: #eeeeee;
-}
+} */
 
 /* Общая стилизация 
 Обнуление встроенных стилей */
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -49,41 +49,41 @@ a {
 textarea {
   resize: none;
   font-family: inherit;
-}
+} */
 
 /* Убирает обводку с элементов формы в фокусе */
 
-input:active,
+/* input:active,
 input:hover,
 input:focus,
 textarea:hover,
 textarea:focus,
 textarea:active {
   outline: 0;
-}
+} */
 
 /* Фоновые цвета */
 
-.header {
-  background-color: var(--main-background-color);
+/* .header {
+  background-color: $main-background-color;
   border-bottom: 1px solid #ececec;
 }
 
 .hero,
 .footer {
-  background-color: var(--hero-footer-color);
+  background-color: $hero-footer-color;
 }
 
 .team {
-  background-color: var(--additional-background-color);
-}
+  background-color: $additional-background-color;
+} */
 
 /* Шрифты */
 
-body {
+/* body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-}
+} */
 
 /* Общие стили для контейнера */
 
@@ -95,16 +95,9 @@ body {
   padding-right: 15px;
 }
 
-/* Стилизация разделов с фоном, отличным от основного */
-
-.team {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* Header */
 
-/* Геометрия и позиционирование Header */
+Геометрия и позиционирование Header
 
 /* Размещает в одну строку навигацию и контакты */
 
@@ -147,7 +140,7 @@ body {
   padding-top: 25px;
   padding-bottom: 25px;
 
-  color: var(--logo-color);
+  color: $logo-color;
 
   font-family: 'Raleway', sans-serif;
 
@@ -158,7 +151,7 @@ body {
 }
 
 .logo__accent-text {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 /* Оформление нав. ссылок в шапке */
@@ -169,7 +162,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--title-text-color);
+  color: $title-text-color;
 
   font-weight: 500;
   font-size: 14px;
@@ -183,11 +176,11 @@ body {
 
 .site-menu__link:hover,
 .site-menu__link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .site-menu__link--current {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 /* Подчеркивание активного пункта меню */
@@ -199,7 +192,7 @@ body {
   bottom: -1px;
   width: 100%;
   height: 4px;
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   border-radius: 2px;
 }
 
@@ -212,7 +205,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--text-color);
+  color: $text-color;
 
   font-weight: 500;
   font-size: 14px;
@@ -226,7 +219,7 @@ body {
 
 .header__contacts__link:hover,
 .header__contacts__link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 /* Цвет и отступ для иконок мейла и телефона */
@@ -273,7 +266,7 @@ body {
 
   width: 696px;
 
-  color: var(--white-additional-color);
+  color: $white-additional-color;
 
   font-weight: 900;
   font-size: 44px;
@@ -287,8 +280,8 @@ body {
   width: 200px;
   height: 50px;
 
-  background-color: var(--accent-color);
-  color: var(--white-additional-color);
+  background-color: $accent-color;
+  color: $white-additional-color;
 
   font-weight: 700;
   font-size: 16px;
@@ -337,7 +330,7 @@ body {
   width: 270px;
   height: 120px;
 
-  background-color: var(--additional-background-color);
+  background-color: $additional-background-color;
 }
 
 /* Стили текста и заголовков */
@@ -345,7 +338,7 @@ body {
 .features__title {
   margin-bottom: 10px;
 
-  color: var(--title-text-color);
+  color: $title-text-color;
 
   font-weight: 700;
   font-size: 14px;
@@ -356,7 +349,7 @@ body {
 }
 
 .features__text {
-  color: var(--text-color);
+  color: $text-color;
 
   font-weight: 400;
   font-size: 14px;
@@ -374,7 +367,7 @@ body {
 .issues__title {
   margin-bottom: 50px;
 
-  color: var(--title-text-color);
+  color: $title-text-color;
 
   font-weight: 700;
   font-size: 36px;
@@ -429,7 +422,7 @@ body {
   transform: translate(-50%, 0);
   left: 50%;
 
-  color: var(--white-additional-color);
+  color: $white-additional-color;
 
   font-weight: 700;
   font-size: 14px;
@@ -449,7 +442,7 @@ body {
 .team__title {
   margin-bottom: 50px;
 
-  color: var(--title-text-color);
+  color: $title-text-color;
 
   font-weight: 700;
   font-size: 36px;
@@ -479,7 +472,7 @@ body {
 }
 
 .team-card__item {
-  background-color: var(--main-background-color);
+  background-color: $main-background-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -492,7 +485,7 @@ body {
 .team-card__title {
   margin-bottom: 10px;
 
-  color: var(--title-text-color);
+  color: $title-text-color;
 
   font-weight: 500;
   font-size: 16px;
@@ -505,7 +498,7 @@ body {
 .team-card__text {
   margin-bottom: 16px;
 
-  color: var(--text-color);
+  color: $text-color;
 
   font-weight: 400;
   font-size: 16px;
@@ -533,8 +526,8 @@ body {
   height: 44px;
   border-radius: 50%;
 
-  color: var(--grey-svg-color);
-  background-color: var(--main-background-color);
+  color: $grey-svg-color;
+  background-color: $main-background-color;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -542,8 +535,8 @@ body {
 
 .social-networks__circle-button:hover,
 .social-networks__circle-button:focus {
-  background-color: var(--accent-color);
-  color: var(--white-additional-color);
+  background-color: $accent-color;
+  color: $white-additional-color;
   outline: none;
 }
 
@@ -561,7 +554,7 @@ body {
 .clients__title {
   margin-bottom: 50px;
 
-  color: var(--title-text-color);
+  color: $title-text-color;
 
   font-weight: 700;
   font-size: 36px;
@@ -598,8 +591,8 @@ body {
 
 .clients__unit:hover,
 .clients__unit:focus {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
+  border-color: $accent-color;
+  color: $accent-color;
   outline: none;
 }
 
@@ -627,7 +620,7 @@ body {
 .footer__titles {
   margin-bottom: 20px;
 
-  color: var(--white-additional-color);
+  color: $white-additional-color;
 
   font-weight: 700;
   font-size: 14px;
@@ -641,22 +634,20 @@ body {
   display: block;
   margin-bottom: 20px;
 
-  color: var(--white-additional-color);
+  color: $white-additional-color;
 
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-
-  text-decoration: none;
 }
 
 .address__map {
   display: block;
   margin-bottom: 9px;
 
-  color: var(--white-additional-color);
+  color: $white-additional-color;
 
   font-style: normal;
   font-weight: 400;
@@ -667,7 +658,7 @@ body {
 
 .address__email,
 .address__tel {
-  color: var(--mailtel-logo-footer);
+  color: $mailtel-logo-footer;
 
   font-style: normal;
   font-weight: 400;
@@ -697,7 +688,7 @@ body {
 
 .footer-sn__circle-button {
   background-color: rgba(255, 255, 255, 0.1);
-  color: var(--white-additional-color);
+  color: $white-additional-color;
 }
 
 .footer-sn__set .footer-sn__items:last-child {
@@ -775,8 +766,8 @@ body {
 .button-set__btn {
   padding: 6px 22px;
 
-  color: var(--title-text-color);
-  background-color: var(--additional-background-color);
+  color: $title-text-color;
+  background-color: $additional-background-color;
 
   font-family: inherit;
   font-weight: 500;
@@ -794,8 +785,8 @@ body {
 
 .button-set__btn:hover,
 .button-set__btn:focus {
-  color: var(--white-additional-color);
-  background-color: var(--accent-color);
+  color: $white-additional-color;
+  background-color: $accent-color;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -818,7 +809,7 @@ body {
   margin-left: 30px;
   margin-top: 30px;
 
-  background-color: var(--main-background-color);
+  background-color: $main-background-color;
 }
 
 /* Эффект ховера на ссылку */
@@ -868,7 +859,7 @@ body {
 
   width: 322px;
 
-  color: var(--white-additional-color);
+  color: $white-additional-color;
 
   font-weight: 400;
   font-size: 18px;
@@ -890,15 +881,15 @@ body {
   padding-left: 24px;
   padding-right: 24px;
 
-  border-bottom: 1px solid var(--portfolio-border-color);
-  border-left: 1px solid var(--portfolio-border-color);
-  border-right: 1px solid var(--portfolio-border-color);
+  border-bottom: 1px solid $portfolio-border-color;
+  border-left: 1px solid $portfolio-border-color;
+  border-right: 1px solid $portfolio-border-color;
 }
 
 .card-content__header {
   margin-bottom: 4px;
 
-  color: var(--title-text-color);
+  color: $title-text-color;
 
   font-weight: 700;
   font-size: 18px;
@@ -907,7 +898,7 @@ body {
 }
 
 .card-content__text {
-  color: var(--text-color);
+  color: $text-color;
 
   font-weight: 400;
   font-size: 16px;
@@ -966,7 +957,7 @@ body {
   width: 528px;
   max-height: 100vh;
 
-  background-color: var(--main-background-color);
+  background-color: $main-background-color;
 
   overflow-y: auto;
 
@@ -988,7 +979,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 
 .modal__group-fields {
@@ -1011,7 +1002,7 @@ body {
 
   letter-spacing: 0.01em;
 
-  color: var(--text-color);
+  color: $text-color;
 }
 
 .modal__group-input {
@@ -1037,19 +1028,19 @@ body {
   top: 11px;
   left: 12px;
 
-  fill: var(--title-text-color);
+  fill: $title-text-color;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__input:hover,
 .modal__input:focus {
-  border-color: var(--accent-color);
+  border-color: $accent-color;
 }
 
 .modal__input:focus + .modal__icon,
 .modal__input:hover + .modal__icon {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 /* Поле "комментарии" */
@@ -1104,7 +1095,7 @@ body {
   top: 4px;
   left: 12px;
 
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   opacity: 0%;
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1142,7 +1133,7 @@ body {
 .modal__link {
   text-decoration-line: underline;
 
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 /* Кнопка отправки формы в модальном окне */
@@ -1174,8 +1165,8 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
-  background-color: var(--main-background-color);
-  color: var(--text-color);
+  background-color: $main-background-color;
+  color: $text-color;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1186,5 +1177,5 @@ body {
 
 .modal__close-button:hover,
 .modal__close-button:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
