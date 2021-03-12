@@ -1,0 +1,143 @@
+/* Подвал */
+
+.footer {
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 252px;
+
+  padding-top: 60px;
+}
+
+/* Ставит блоки футера в строку */
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__titles {
+  margin-bottom: 20px;
+
+  color: $white-additional-color;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+
+  color: $white-additional-color;
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.address__map {
+  display: block;
+  margin-bottom: 9px;
+
+  color: $white-additional-color;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.address__email,
+.address__tel {
+  color: $mailtel-logo-footer;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.address__email {
+  display: block;
+  margin-bottom: 9px;
+}
+
+/* Ставит иконки в строку и добавляет выравнивание */
+
+.footer-sn {
+  margin-left: 70px;
+}
+
+.footer-sn__set {
+  display: flex;
+}
+
+.footer-sn__items {
+  margin-right: 10px;
+}
+
+.footer-sn__circle-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: $white-additional-color;
+}
+
+.footer-sn__set .footer-sn__items:last-child {
+  margin-right: 0;
+}
+
+/* Блок с подпиской */
+
+.footer-subscribe {
+  margin-left: 93px;
+}
+
+.footer-subscribe__set {
+  display: flex;
+  align-items: center;
+}
+
+/* Меняет цвет текста в Placeholder */
+
+.footer-subscribe__set input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-subscribe__input {
+  width: 358px;
+
+  padding: 0;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+
+.footer-subscribe__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 12px;
+}
+
+.button__icon {
+  margin-left: 10px;
+}
