@@ -32,6 +32,8 @@
 }
 
 .address {
+  font-style: normal;
+
   &__map {
     @extend %text-section;
 
@@ -39,8 +41,6 @@
     margin-bottom: 9px;
 
     color: $white-additional-color;
-
-    font-style: normal;
   }
 
   &__email {
@@ -50,20 +50,14 @@
     margin-bottom: 9px;
 
     color: $mailtel-logo-footer;
-
-    font-style: normal;
   }
 
   &__tel {
     @extend %text-section;
 
     color: $mailtel-logo-footer;
-
-    font-style: normal;
   }
 }
-
-/* Ставит иконки в строку и добавляет выравнивание */
 
 .footer-sn {
   margin-left: 70px;
@@ -73,7 +67,7 @@
   }
 
   &__circle-button {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: $footer-circle-btn-color;
     color: $white-additional-color;
   }
 }
@@ -99,10 +93,11 @@
     padding-top: 15px;
     padding-bottom: 15px;
 
-    background-color: #2f303a;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: $hero-footer-color;
+    @include border($footer-input-border);
+
     border-radius: 4px;
-    color: rgba(255, 255, 255, 0.6);
+    color: $mailtel-logo-footer;
 
     font-weight: 400;
     font-size: 16px;
@@ -124,6 +119,6 @@
   align-items: center;
 
   & input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+    color: $mailtel-logo-footer;
   }
 }

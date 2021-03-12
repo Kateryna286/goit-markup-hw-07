@@ -1,17 +1,3 @@
-%text-header {
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  text-decoration: none;
-
-  @include transition(color);
-}
-
 %section-titles {
   margin-bottom: 50px;
 
@@ -33,11 +19,41 @@
   text-transform: uppercase;
 }
 
+%modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+%text-header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+
+  @include transition(color);
+}
+
 %text-section {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+%text-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+
+  letter-spacing: 0.01em;
 }
 
 %logo {
@@ -46,4 +62,11 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+
+%position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
